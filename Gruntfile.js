@@ -294,7 +294,6 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          dir: '../dist',
           remote: 'git@github.com:baudoin/baudoin-jekyll.git',
           branch: 'production',
           commit: true,

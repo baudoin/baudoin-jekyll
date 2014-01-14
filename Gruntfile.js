@@ -122,7 +122,8 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          generatedImagesDir: '<%= yeoman.dist %>/img/generated'
+          generatedImagesDir: '<%= yeoman.dist %>/img/generated',
+          outputStyle: 'compressed'
         }
       },
       server: {

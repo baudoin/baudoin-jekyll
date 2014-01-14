@@ -1,6 +1,7 @@
 {
-  "name": "blog",
-  "version": "0.0.0",
+  "name": "baudoin-jekyll",
+  "version": "1.0",
   "dependencies": {
+  	"jquery": "latest"
   }
 }

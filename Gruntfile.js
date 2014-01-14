@@ -117,6 +117,7 @@ module.exports = function (grunt) {
         httpImagesPath: '/img',
         httpGeneratedImagesPath: '/img/generated',
         outputStyle: 'expanded',
+        noLineComments: true,
         raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
       },
       dist: {
@@ -256,11 +257,11 @@ module.exports = function (grunt) {
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            //'_bower_components/jquery/jquery.js',
-            //'favicon.ico',
-            //'apple-touch*.png'
+            '_bower_components/jquery/jquery.min.js',
+            'favicon.ico',
+            'apple-touch*.png'
           ],
           dest: '<%= yeoman.dist %>'
         }]
@@ -394,10 +395,10 @@ module.exports = function (grunt) {
     'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
-    'concat',
+    // 'concat',
     'autoprefixer:dist',
     'cssmin',
-    'uglify',
+    // 'uglify',
     'imagemin',
     'svgmin',
     'rev',

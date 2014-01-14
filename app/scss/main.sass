@@ -8,6 +8,7 @@
 @import "compass/reset"
 
 @import "font-awesome"
+@import "syntax"
 
 // Susy Grid Systems
 // $show-grid-backgrounds: true
@@ -119,6 +120,10 @@ header, .content
 header
   padding: 0 $gutter-width
   margin-bottom: $gutter-width
+
+  h1
+    a
+      color: lighten($gray, 5)
 
 .social
   @include clearfix
